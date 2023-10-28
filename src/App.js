@@ -1,19 +1,36 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import Navbar from './components/navbar/Navbar';
-import Header from './components/header/Header';
-import Footer from './components/footer/Footer';
-import NewCollection from './components/newCollection/NewCollection';
-import Collection from './components/collection/Collection';
+import Navbar from './components/Navbar';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import NewCollection from './components/NewCollection';
+import Collection from './components/Collection';
+import About from './components/About';
+import Contact from './components/Contact';
+import Services from './components/Services';
+import Home from './components/Home';
+import PageNotFound from './components/PageNotFound';
 
 
 const App = () => {
   return (
     <div className='bg-gray-50'>
-      <Navbar />
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route index path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/*" element={<PageNotFound />} />
+        </Routes>
+      </Router>
+
+      {/* <Navbar />
       <Header />
       <NewCollection />
-      <Collection />
+      <Collection /> */}
       <Footer />
     </div>
 
