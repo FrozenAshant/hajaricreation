@@ -27,7 +27,7 @@ const Footer = () => {
           </div>
           <div className='mt-2'>
             <form action="#" className='flex flex-col'>
-              <input className='h-8 text-black outline-none px-2 py-1' type="text" name="" id="" />
+              <input className='h-8 text-black outline-none px-2 py-1 w-80 rounded-sm' type="text" name="" id="" />
               <button className=' rounded-md w-fit px-5 py-1 mt-2 bg-red-600'>Subscribe</button>
             </form>
           </div>
@@ -42,8 +42,8 @@ const Footer = () => {
           <div className='mt-3'>
             <ul className='flex space-x-4'>
 
-              <li><a href="https://www.facebook.com/profile.php?id=100041442990179" target='_blank'> <ImFacebook2 className='h-6 w-6' /></a></li>
-              <li><BsInstagram className='h-6 w-6' /></li>
+              <li><a href="https://www.facebook.com/hajaricreation" target='_blank'> <ImFacebook2 className='h-6 w-6 cursor-pointer' /></a></li>
+              <li><a href="https://www.instagram.com/hajaricreation/" target='_blank'><BsInstagram className='h-6 w-6 cursor-pointer' /></a></li>
             </ul>
           </div>
         </div>
@@ -58,8 +58,8 @@ const Footer = () => {
       </div>
       {/* lower footer */}
       <hr className='mt-5 md:mb-2 lg:mb-2' />
-      <div className='flex flex-col md:flex-row lg:md-row lg:justify-between'>
-        <div className='my-2'><p>@HajariCreation. All Rights Are Reserved </p></div>
+      <div className='my-2 flex flex-col md:flex-row lg:md-row lg:justify-between'>
+        <div className=''><p>@HajariCreation. All Rights Are Reserved </p></div>
         <div className=''>
           <ul className='text-sm md:text-sm flex space-x-2'>
             <li><a href="#">Privacy Policy</a></li>

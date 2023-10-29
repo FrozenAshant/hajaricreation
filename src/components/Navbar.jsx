@@ -54,7 +54,7 @@ const Navbar = ({image}) => {
                 <div className='flex items-center space-x-5 md:order-2'>
                     <BiCategory  className='w-6 h-6 hidden' />
                     <AiOutlineShoppingCart className='w-7 h-7 cursor-pointer' />                
-                    <BiUserCircle   className='w-8 h-8 cursor-pointer' />
+                    <NavLink to="/contact"><BiUserCircle   className='w-8 h-8 cursor-pointer' /></NavLink>
                 </div>
             </div>
             <hr className='drop-shadow-lg' />

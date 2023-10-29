@@ -11,11 +11,13 @@ import Contact from './components/Contact';
 import Services from './components/Services';
 import Home from './components/Home';
 import PageNotFound from './components/PageNotFound';
+import Whatsapp from './components/Whatsapp';
 
 
 const App = () => {
   return (
     <div className='bg-gray-50'>
+      <Whatsapp />
       <Router>
         <Navbar />
         <Routes>
@@ -26,11 +28,6 @@ const App = () => {
           <Route path="/*" element={<PageNotFound />} />
         </Routes>
       </Router>
-
-      {/* <Navbar />
-      <Header />
-      <NewCollection />
-      <Collection /> */}
       <Footer />
     </div>
 
